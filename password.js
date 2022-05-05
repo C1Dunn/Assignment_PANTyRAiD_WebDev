@@ -1,0 +1,1 @@
+alert('Your password has been updated!');

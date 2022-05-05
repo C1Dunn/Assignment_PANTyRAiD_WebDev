@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Requirements page</title>
+	<link rel="stylesheet" href="reqStyle.css">
+</head>
+<body>
+  <button><a href="index.php">HOME</a></button>
+<h1>CMP204 Requirements Page - Unit 2 Assessment</h1>
+
+<p>If you have not met a requirement, do not delete it from the table.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th class="reqCol">Requirement</th>
+      <th class="metCol">How did you meet this requirement?</th>
+      <th class="fileCol">File name(s), line no.</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>HTML, CSS, JavaScript has been contained within separate files.</td>
+      <td>All HTML and php are contained in .php files while all js code is in javascript files and all css is done either by bootstrap or in its own seperate .css file</td>
+      <td>All files except jpegs and text files</td>
+    </tr>
+
+    <tr>
+      <td>A clear use of HTML5.</td>
+      <td>used throught the site to provide structure</td>
+      <td>index.php , news.php , register.php , privacy.php , settings.php , songs.php , navbar.php , login.php , admin.php footer.php</td>
+    </tr>
+    <tr>
+      <td>Use of the Bootstrap framework providing a responsive layout.</td>
+      <td>the container class was used most often in addition to the use of rows in the songs and news pages</td>
+      <td>news.php(Lines 4,5,6,8,20,32,44,56,69) , register.php (Line 5), privacy.php(Line 3) , settings.php(Line 6,7,8,9) , songs.php(Lines 4,5,6,7,8,10,11,15,19,24,29,33) , navbar.php(Lines 4,7,8,9,10,12,15,16,17,18,19) , login.php(Line 6) , admin.php(Line 12) , footer.php(Lines 4)</td>
+    </tr>
+    <tr>
+      <td>Use of JavaScript to manipulate the DOM based on an event.</td>
+      <td>used with the navbar to make page swapping dynamic and not require refreshing the page</td>
+      <td>navbarScripts.js(effects navbar.php & index.php)</td>
+    </tr>
+    <tr>
+      <td>Use of jQuery in conjunction with the DOM.</td>
+      <td>used in the songs page to hide and show either the full albums or the artists ep's</td>
+      <td>settingScripts.js Lines 1-33</td>
+    </tr>
+    <tr>
+      <td>Use of AJAX (pure JavaScript i.e. without the use of a library).</td>
+      <td>Used in the admin page to provide a surprise for admin users</td>
+      <td>adminScripts.js(uses ajaxNavAction.php)</td>
+    </tr>
+    <tr>
+      <td>Use of the jQuery AJAX function.</td>
+      <td>checks the users logged in status, if they are logged in or not and whether they are an admin changes the navbar approprietly</td>
+      <td>settingScripts.js, Lines 37-66</td>
+    </tr>
+    <tr>
+      <td>User login functionality (PHP/MySQL).</td>
+      <td>Users can both login and register, they can also sign out, one account is a designated admin account</td>
+      <td>login.php , loginAction.php , register.php , regAction.php , logoutAction.php</td>
+    </tr>
+    <tr>
+      <td>Ability to select (SELECT), add (INSERT), edit (UPDATE) and delete (DELETE) information from a database (PHP/MySQL).</td>
+      <td>SELECT was used for the user login functionality, INSERT was used for user register functionality, UPDATE was used to allow users to change their password, DELETE was used to allow users to delete their account and all data we have on them</td>
+      <td>login.php(loginAction.php) , register.php(regAction.php) ,settings.php(updatePassword.php & deleteAccount.php)</td>
+    </tr>
+    <tr>
+      <td>Consideration of GDPR and the Cookie Law.</td>
+      <td>a privacy policy has been written and it accessable through the site, it informs the users about data collected on them, what the site can and cant do with it and how that relates to cookie usage</td>
+      <td>privacy.php</td>
+    </tr>
+    <tr>
+      <td>SQL queries written as prepared statements.</td>
+      <td>use of $sql = $conn -> prepare() to hold the queries that will be sent to the database</td>
+      <td>loginAction.php(Line 13) , regAction.php(Line 17) , updatePassword.php(Line 16,27) , deleteAccount.php(Line 6)</td>
+    </tr>
+    <tr>
+      <td>Passwords should be salted and hashed.</td>
+      <td>BCRYPT was used to hash the password, BCRYPT also has it;s own salt</td>
+      <td>regAction.php(Line 9) , updatePassword.php(Lines 9,10)</td>
+    </tr>
+    <tr>
+      <td>User input is sanitised.</td>
+      <td>real_escape_string and prepare() were both used to ensure that inputs were santised</td>
+      <td>loginAction.php(Lines 13 & 7-8) regAction.php(Lines 7,8,9,17) , updatePassword.php(Lines 7,8,16,27)</td>
+    </tr>
+  </tbody>
+
+
+
+</table>
+		
+</body>
+</html>
+
+
+

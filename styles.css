@@ -1,0 +1,101 @@
+body 
+{
+    /*
+    background-image: url("https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80");
+    */
+    /*  */
+    font: "Lucida Console";
+    color:white;
+    background-color: black;
+}
+button
+{
+    background: transparent;
+    background-color: transparent;
+    outline:none;
+    border:none;
+}
+hr
+{
+    height:1px;
+    background-color: white;
+    color: white;
+}
+a
+{
+    color: white;
+}
+.navbar
+{
+    overflow: hidden;
+}
+#title
+{
+    float:middle;
+}
+#links
+{
+    float:right;
+}
+
+.dropdown
+{
+    position:relative;
+    display: inline-block;
+}
+.dropdownContent
+{
+    display:none;
+    position:absolute;
+}
+
+.dropdownContent a
+{
+    color:white;
+    display:block;
+}
+
+.dropdown:hover .dropdownContent
+{
+    display:block;
+}
+
+.parallax
+{
+    /* Image from ryunosuke kikuno found at https://unsplash.com/backgrounds/colors/black */
+    background-image:url("ryunosuke-kikuno-zE-MrTmjzd4-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:500px;
+}
+#main
+{
+    border-radius: 25px;
+    border: 0.5px solid white;
+    padding: 40px;
+    box-shadow: 1px;
+    background-color: rgba(0,0,0,0.9);
+}
+#latestRelease
+{
+    background-color: rgba(255, 255, 255,0.9);
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+
+}
+#latestRelease img
+{
+    width: 100%;
+    height:auto;
+}
+.col-sm-4
+{
+    float: right;
+}
+#formSubmit
+{
+    color: black;
+}
